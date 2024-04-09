@@ -19,10 +19,19 @@ class ProjectResource extends Resource
     {
         return $form
             ->schema([
+                Forms\Components\SpatieMediaLibraryFileUpload::make('image')
+                    ->label(__('admin-kit-projects::projects.resource.image'))
+                    ->required()
+                    ->image()
+                    ->optimize('webp')
+                    ->resize(30),
+                Forms\Components\TagsInput::make('tags')
+                    ->label(__('admin-kit-projects::projects.resource.tags')),
                 TranslatableTabs::make(fn ($locale) => Forms\Components\Tabs\Tab::make($locale)->schema([
-                    Forms\Components\TextInput::make('title')
-                        ->label(__('admin-kit-projects::projects.resource.title'))
-                        ->required($locale === app()->getLocale()),
+                    Forms\Components\TextInput::make("title.$locale")
+                        ->label(__('admin-kit-projects::projects.resource.title')),
+                    Forms\Components\RichEditor::make("description.$locale")
+                        ->label(__('admin-kit-projects::projects.resource.description')),
                 ])),
             ])
             ->columns(1);
@@ -76,11 +85,6 @@ class ProjectResource extends Resource
     }
 
     public static function getPluralLabel(): ?string
-    {
-        return __('admin-kit-projects::projects.resource.plural_label');
-    }
-
-    public static function getNavigationGroup(): ?string
     {
         return __('admin-kit-projects::projects.resource.plural_label');
     }

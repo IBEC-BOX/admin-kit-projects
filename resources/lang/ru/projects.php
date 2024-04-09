@@ -2,11 +2,14 @@
 
 return [
     'resource' => [
-        'label' => 'Project',
-        'plural_label' => 'Projects',
+        'label' => 'Проект',
+        'plural_label' => 'Проекты',
 
         'id' => 'ID',
-        'title' => 'Title',
+        'title' => 'Заголовок',
+        'description' => 'Описание',
+        'tags' => 'Теги',
+        'image' => 'Изображение',
 
         'created_at' => 'Создан',
         'updated_at' => 'Обновлен',
