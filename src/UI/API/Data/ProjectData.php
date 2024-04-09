@@ -2,8 +2,8 @@
 
 namespace AdminKit\Projects\UI\API\Data;
 
-use Spatie\LaravelData\Data;
 use AdminKit\Projects\Models\Project;
+use Spatie\LaravelData\Data;
 
 class ProjectData extends Data
 {
@@ -11,9 +11,8 @@ class ProjectData extends Data
         public string $title,
         public string $description,
         public string $image,
-        public array  $tags,
-    )
-    {
+        public array $tags,
+    ) {
     }
 
     public static function fromModel(Project $project): ProjectData
