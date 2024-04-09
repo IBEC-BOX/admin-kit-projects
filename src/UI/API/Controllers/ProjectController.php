@@ -5,16 +5,18 @@ declare(strict_types=1);
 namespace AdminKit\Projects\UI\API\Controllers;
 
 use AdminKit\Projects\Models\Project;
+use Spatie\LaravelData\DataCollection;
+use AdminKit\Projects\UI\API\Data\ProjectData;
 
 class ProjectController extends Controller
 {
-    public function index()
+    public function index(): DataCollection
     {
-        return Project::all();
+        return ProjectData::collection(Project::all());
     }
 
-    public function show(int $id)
+    public function show(Project $project): ProjectData
     {
-        return Project::findOrFail($id);
+        return ProjectData::from($project);
     }
 }
