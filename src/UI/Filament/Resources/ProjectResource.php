@@ -3,11 +3,11 @@
 namespace AdminKit\Projects\UI\Filament\Resources;
 
 use AdminKit\Core\Forms\Components\TranslatableTabs;
+use AdminKit\Projects\Models\Project;
+use AdminKit\Projects\UI\Filament\Resources\ProjectResource\Pages;
 use Filament\Forms;
 use Filament\Resources\Resource;
 use Filament\Tables;
-use AdminKit\Projects\Models\Project;
-use AdminKit\Projects\UI\Filament\Resources\ProjectResource\Pages;
 
 class ProjectResource extends Resource
 {

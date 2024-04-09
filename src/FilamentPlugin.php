@@ -2,9 +2,9 @@
 
 namespace AdminKit\Projects;
 
+use AdminKit\Projects\UI\Filament\Resources\ProjectResource;
 use Filament\Contracts\Plugin;
 use Filament\Panel;
-use AdminKit\Projects\UI\Filament\Resources\ProjectResource;
 
 class FilamentPlugin implements Plugin
 {

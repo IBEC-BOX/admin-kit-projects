@@ -2,9 +2,9 @@
 
 namespace AdminKit\Projects\UI\Filament\Resources\ProjectResource\Pages;
 
+use AdminKit\Projects\UI\Filament\Resources\ProjectResource;
 use Filament\Actions;
 use Filament\Resources\Pages\ListRecords;
-use AdminKit\Projects\UI\Filament\Resources\ProjectResource;
 
 class ListProject extends ListRecords
 {

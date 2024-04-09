@@ -3,9 +3,9 @@
 namespace AdminKit\Projects\Models;
 
 use AdminKit\Core\Abstracts\Models\AbstractModel;
+use AdminKit\Projects\Database\Factories\ProjectFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Spatie\Translatable\HasTranslations;
-use AdminKit\Projects\Database\Factories\ProjectFactory;
 
 class Project extends AbstractModel
 {

@@ -2,8 +2,8 @@
 
 namespace AdminKit\Projects\UI\Filament\Resources\ProjectResource\Pages;
 
-use Filament\Resources\Pages\CreateRecord;
 use AdminKit\Projects\UI\Filament\Resources\ProjectResource;
+use Filament\Resources\Pages\CreateRecord;
 
 class CreateProject extends CreateRecord
 {

@@ -2,10 +2,10 @@
 
 namespace AdminKit\Projects;
 
-use Spatie\LaravelPackageTools\Package;
-use Spatie\LaravelPackageTools\PackageServiceProvider;
 use AdminKit\Projects\Commands\ProjectsCommand;
 use AdminKit\Projects\Providers\RouteServiceProvider;
+use Spatie\LaravelPackageTools\Package;
+use Spatie\LaravelPackageTools\PackageServiceProvider;
 
 class ProjectsServiceProvider extends PackageServiceProvider
 {

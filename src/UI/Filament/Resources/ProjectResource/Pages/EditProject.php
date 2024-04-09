@@ -2,9 +2,9 @@
 
 namespace AdminKit\Projects\UI\Filament\Resources\ProjectResource\Pages;
 
+use AdminKit\Projects\UI\Filament\Resources\ProjectResource;
 use Filament\Actions;
 use Filament\Resources\Pages\EditRecord;
-use AdminKit\Projects\UI\Filament\Resources\ProjectResource;
 
 class EditProject extends EditRecord
 {

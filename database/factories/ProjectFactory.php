@@ -2,8 +2,8 @@
 
 namespace AdminKit\Projects\Database\Factories;
 
-use Illuminate\Database\Eloquent\Factories\Factory;
 use AdminKit\Projects\Models\Project;
+use Illuminate\Database\Eloquent\Factories\Factory;
 
 class ProjectFactory extends Factory
 {
