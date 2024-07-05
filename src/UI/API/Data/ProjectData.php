@@ -3,17 +3,19 @@
 namespace AdminKit\Projects\UI\API\Data;
 
 use AdminKit\Projects\Models\Project;
+use Spatie\LaravelData\Concerns\WithDeprecatedCollectionMethod;
 use Spatie\LaravelData\Data;
 
 class ProjectData extends Data
 {
+    use WithDeprecatedCollectionMethod;
+
     public function __construct(
         public string $title,
         public string $description,
         public string $image,
         public array $tags,
-    ) {
-    }
+    ) {}
 
     public static function fromModel(Project $project): ProjectData
     {
