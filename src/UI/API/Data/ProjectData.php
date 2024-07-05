@@ -15,8 +15,7 @@ class ProjectData extends Data
         public string $description,
         public string $image,
         public array $tags,
-    ) {
-    }
+    ) {}
 
     public static function fromModel(Project $project): ProjectData
     {

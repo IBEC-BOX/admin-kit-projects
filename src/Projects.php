@@ -2,6 +2,4 @@
 
 namespace AdminKit\Projects;
 
-class Projects
-{
-}
+class Projects {}
