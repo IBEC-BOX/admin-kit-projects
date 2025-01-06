@@ -21,7 +21,7 @@ class ProjectResource extends Resource
             ->schema([
                 Forms\Components\SpatieMediaLibraryFileUpload::make('image')
                     ->label(__('admin-kit-projects::projects.resource.image'))
-                    //->required()
+                    // ->required()
                     ->image()
                     ->optimize('webp')
                     ->resize(30),
