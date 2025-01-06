@@ -42,6 +42,6 @@ class Project extends AbstractModel implements HasMedia
 
     protected static function newFactory(): ProjectFactory
     {
-        return new ProjectFactory();
+        return new ProjectFactory;
     }
 }
